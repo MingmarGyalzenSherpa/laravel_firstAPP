@@ -28,7 +28,7 @@
     
         @foreach($articles as $article)
             <div class="news">
-                <h2>{{$article['title']}}</h2>
+                <h2> <a href="article/{{$article['id']}}">  {{$article['title']}} </a></h2>
                 <p>{{$article['desc']}}</p>
             </div>
         @endforeach
